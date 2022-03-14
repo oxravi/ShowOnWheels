@@ -1,0 +1,84 @@
+H3 { color:orangered;
+    font-family:fantasy;
+     position: absolute; right: 140px; top: 340px;font-size: 25px;
+     }
+     footer P { text-align: center; background-color:black;font-style: oblique;
+       color: white; font-size: 19px;
+        }
+         body
+        {
+          
+          background-image: url('background11.jpg') ;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-origin: border-box;
+
+          
+          
+                    
+
+
+
+
+
+      
+
+ 
+ 
+            
+             }
+             details { color:black;
+                font-family:fantasy;
+                font-size: 15px;
+                }
+                 H1
+                  { font-family:fantasy;
+                    color:orangered; font-size: 25px;
+                    position: absolute;
+                     top: 0px; right: 50px; }
+                  Article P {
+                    color: black;
+                    font-size: 17px;
+                   font-family: arial;
+                   font-style: oblique;
+                   width: 550px;
+                    }
+                    H5 { font-family: arial;
+                       color: white;
+                        font-size: 16px;
+                         float:right;
+                          }
+ 
+ 
+                                details UL
+                               { color:orangered;
+                                  font-size: 15px;
+                                   }
+                                    H4 { color: orangered;
+                                       font-family: fantasy;
+                                       font-size: 30px;
+                                        }
+                                         video { position: absolute; right: 50px; top: 430px;
+                                            }
+                                            #main H4 { color:orangered;
+                                              font-size: 24px;
+                                              }
+                                              .auto-style1 { color: #FFFFFF;
+                                                font-style: italic;
+                                                }
+ 
+ 
+ 
+                                                       nav a{ display: inline; color:white;
+                                                         }
+                                                         a:visited{
+                                                           color:blue;
+                                                         }
+                                                         a:active{
+                                                           color:#ff1493;
+                                                         }
+                                                         p.mix{
+                                                           background-color: blue;
+                                                           border-style: dotted dasched solid double;
+                                                         }
+                                                      

@@ -1,0 +1,41 @@
+<!Doctype html>
+<html lang = "en">
+ <head>
+     <meta charset = "UTF-8">
+   <title>Mathtutor</title>
+  
+</head>
+<body bgcolor="blue">
+<h1>MathTutor.com</h1>
+<input  type ="number" name="" id="demo" placeholder="Enter Number">
+<button onclick = "myfunction()" style= "background-color: #333333;color: #00FF00;border-radius: 25px;">Check Prime</button>
+
+<script type="text/javascript">
+function myfunction()
+{
+    var num = document.getElementById("demo").value;
+    var isPrime;
+    for( var i=2; i<=num; i++)
+    {
+        isPrime = 1;
+        for(var j=2; j<=i/2; j++)
+        {
+            if(i%j == 0)
+            {
+              isPrime = 0;
+              break;
+            }
+        }
+        if(isPrime == 1)
+        {
+            document.write("Prime no. are : ");
+            document.write(i + "<br>");
+        }
+    }
+}
+</script>
+
+
+  
+</body>
+</html>  

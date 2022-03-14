@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Book Movies</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+
+	<!-- Custom stlylesheet -->
+	<link type="text/css" rel="stylesheet" href="css/style.css" />
+
+<script>
+
+	
+function myfunction(){
+            alert("Successfully Booked");
+        }
+</script>
+</head>
+ <form action="ravisingh261001@gmail.com" method="post">
+<body>
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<h2>Book Your Ticket Online</h2>
+						<form>
+							<div class="form-group">
+								<input class="form-control" type="text" placeholder="Name">
+								<span class="form-label">Name</span>
+							</div>
+							<div class="form-group">
+								<select class="form-control" required>
+									<option value="" selected hidden>Movies</option>
+									<option><ul><b>Action Movie List</b>
+										<option><li>Stars Wars</li></option>
+										<option><li>Roberts</li></option>
+										<option><li>Logan Lerman</li></option>
+										<option><li>Man of Steel</li></option>
+									  </ul></option>
+									  <option><ul>Horror Movies List
+										<option><li>1920</li></option>
+										<option>Conjuring 2</li></option>
+										<option>Haunted-3D</li></option>
+										
+									  </ul></option>
+									  <option><ul>Adventure Movie List
+										<option><li>Bharat</li></option>
+										<option>Aladdin</li></option>
+										<option>Uncharted</li></option>
+										<option>Total Dhamaal</li></option>
+									  </ul></option>
+									
+								</select>
+								</div>
+								<div class="form-group">
+									<select class="form-control" required>
+										<option value="" selected hidden>Class</option>
+										<option>Platinum</option>
+										<option>Gold</option>
+										<option>Exclusive</option>
+									</select>
+									</div>
+									<div class="form-group">
+										<select class="form-control" disabled>
+											<option value="" selected hidden>Price</option>
+											<option>150 INR</option>
+											<option>250 INR</option>
+											<option>300 INR for Gold</option>
+											<option>500 INR for Platinum</option>
+										</select>
+										</div>
+										<div class="form-group">
+											<select class="form-control" required>
+												<option value="" selected >No. of Tickets</option>
+												<option>1</option>
+												<option>2</option>
+												<option>3</option>
+												<option>4</option>
+												<option>5</option>
+											
+											</select>
+											</div>
+											<div class="form-group">
+												<input class="form-control" type="text" placeholder="Total Price" disabled/>
+												<span class="form-label">Total Price</span>
+											</div>
+							
+							
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="date" required>
+										<span class="form-label">Date of Booking</span>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input class="form-control" type="time" required>
+										<span class="form-label">Show Timing</span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn">
+								<center><button class="submit-btn" onclick="myfunction()">Submit</button>
+								<button class="submit-btn">Reset</button></center>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.min.js"></script>
+	<script>
+		$('.form-control').each(function () {
+			floatedLabel($(this));
+		});
+
+		$('.form-control').on('input', function () {
+			floatedLabel($(this));
+		});
+
+		function floatedLabel(input) {
+			var $field = input.closest('.form-group');
+			if (input.val()) {
+				$field.addClass('input-not-empty');
+			} else {
+				$field.removeClass('input-not-empty');
+			}
+		}
+	</script>
+</form>
+</body>
+
+</html>

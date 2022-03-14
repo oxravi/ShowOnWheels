@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang= "en"> 
+    <head>   
+    <title>  
+    Registration Page  
+    </title>  
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <link rel="stylesheet" href="style.css">
+    <script>
+    function hobbies(){
+        const btn = document.querySelector('.abc');
+    btn.addEventListener('click', (event) => {
+        let checkboxes = document.querySelectorAll('input[name="hobbies"]:checked');
+        let values = [];
+        checkboxes.forEach((checkbox) => {
+            values.push(checkbox.value);
+        });
+        if(values.length > 1){
+            return true
+        }
+        else{
+            alert('Please select atleast two hobbies');
+        }
+    });  
+    }
+    </script>
+    </head>  
+    <body>  
+    <br>  
+    <br>  
+    <form>  
+      <h2>Application Form</h2>
+      <div class="abc">
+    <label> Full Name </label>         
+    <input type="text" name="name" size="15" placeholder="Enter Full Name" required/> <br> <br>  
+
+    <div class="abc">
+        <label> Email Address </label>   
+        <input type="email"  name="email" placeholder="Enter Email Address" required/> <br>  
+        <div class="error" id ="emailErr" ></div>  
+    </div>
+
+    <div class="abc">
+    <label>Mobile Number</label> 
+    <input type="text"  name="mobile" placeholder="Enter Mobile Number" required/>
+    <div class="error" id ="mobileErr" ></div>  
+      </div>
+      
+      <div class="abc">
+    <label>  Country :  </label>   
+    <select name="country">  
+    <option>Select</option>
+    <option>India</option>
+    <option>United State</option>
+    <option>Russia</option>
+    <option>South Korea</option>
+
+    </select>  
+</div>
+
+<div class = "abc">
+     
+    <label>Gender :</label>
+    <div class="form-inline"> 
+    <label><input type="radio" name="gender" value="male"> Male </label> 
+    <label><input type="radio" name="gender" value="female"> Female </label>
+    
+    </div>
+    <div class="error" id ="genderErr" ></div>  
+    </div>
+    <div class ="abc">
+        <label>Hobbies <i>(Optional)</i>></label>
+        <div class="form-inline" onclick="hobbies()">
+        <label><input type="checkbox" name="hobbies[]" value="sports"> Sports</label>
+        <label><input type="checkbox" name="hobbies[]" value="sports"> Movies</label>
+        <label><input type="checkbox" name="hobbies[]" value="sports"> Music</label>
+    </div>
+    </div>
+    <div class="abc">
+        <input type="submit" value="Submit">
+    </div>
+    </form>  
+    </body>  
+    </html>  

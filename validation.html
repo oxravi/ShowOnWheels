@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang= "en"> 
+    <head>   
+    <title>  
+    Registration Page  
+    </title> 
+    <link rel ="stylesheet" href ="style.css">
+    
+
+    <script type = "text/javascript">
+        function validate(){
+            if(document.myform.Name.value == ""){
+              alert("please provide your full name");
+              document.myform.Name.focus();
+              return false;
+            }
+
+            if(document.myform.Email.value == ""){
+              alert("please provide your email address");
+              document.myform.Email.focus();
+              return false;
+            }
+
+            
+            if(document.myform.Zip.value == "" || isNaN(document.myform.Zip.value )){
+              alert("please provide your zip");
+              document.myform.Zip.focus();
+              return false;
+            }
+            
+            if(document.myform.Country.value == "-1"){
+              alert("please provide your country");
+              document.myform.Zip.focus();
+              return false;
+            }
+              return (true)
+        }
+
+
+    </script>
+</head>
+<body>
+<form action ="success.html" name ="myform" onsubmit="return(validate());">
+    <table>
+<tr>
+    <td align="right">Name</td>
+    <td><input type="text" name ="Name" /></td>
+    </tr>
+    <tr>
+        <td align="right">Email</td>
+        <td><input type="text" name ="Email" /></td>
+        </tr>
+        <tr>
+            <td align="right">Zip Code</td>
+            <td><input type="text" name ="Zip" /></td>
+            </tr>
+            <tr>
+                <td align="right">Country</td>
+
+                <td>
+                    <select name="Country">
+                        <option value="-1" selected>[choose yours]</option>
+                        <option value="1">USA</option>
+                        <option value="2">UK</option>
+                        <option value="3">INDIA</option>
+                    </select>
+                    </td>
+                    </tr>
+                    <tr>
+                        <td align="right"></td>
+        <td><input type="submit" value ="Submit" /></td>
+        </tr>
+        
+    
+
+    </table>
+    </form>
+    </body>
+    </html>
